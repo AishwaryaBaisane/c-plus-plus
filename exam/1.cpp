@@ -1,3 +1,4 @@
+
 //Q.1 Write a Program to create a class to read and add two distances.
 //For example,
 //Input:
@@ -11,8 +12,10 @@ using namespace std;
 class Add
 {
 	public:
+    int feet,inch;
 	int feet1,inch1;
 	int feet2,inch2;
+	int sum = 0;
 	void input()
 	{
 		cout << "Enter feet : ";
@@ -27,24 +30,19 @@ class Add
 		cout << "Enter inche :";
 		cin >> inch2;
 	}
-	void output()
-	{
-		if(inch1>12)
-		{
-			inch1-=12;
-			feet1++;
-		}
-		cout << "feet - " << feet1 << "inch - " << inch1;
-	}
-	void output2()
-	{
-		if(inch2>12)
-		{
-			inch2-=12;
-			feet2++;
-		}
-		cout << "feet - " << feet2 << "inch - " << inch2;
 
+	void output3()
+	{
+		feet = feet1 + feet2;
+		inch = inch1 + inch2;
+		if(inch>12)
+		{
+			int x = inch/12;
+			feet+=x;
+			inch= inch-(x * 12);
+			cout << "feet - " << feet << "inch - " << inch;
+		}
+		
 	}
 	
 	
@@ -54,6 +52,6 @@ int main()
 {
 	Add m1;
 	m1.input();
-	m1.output();
-	m1.output2();
+	m1.output3();
 }
+
