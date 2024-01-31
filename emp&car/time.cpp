@@ -5,18 +5,21 @@ using namespace std;
 class Time
 {
 	public:
-	int second,hour,min;
+
+	int s,hour,min;
+
 	void time()
 	{
+		
 	  cout << "Enter second : ";
-	  cin >> second;
+	  cin >> s;
 	  
-	   hour = second/3600;
-	   second=second-(hour*3600);
-	   min=second/60;
-	   second=second-(min*60);
+	   hour = s/3600;
+	   s=s-(hour*3600);
+	   min=s/60;
+	   s=s-(min*60);
 	   
-	 cout <<"hh: mm: ss " << endl << hour << ':' << min << ':' << second ; 
+	 cout <<"hh: mm: ss " << endl << hour << ':' << min << ':' << s ; 
 	}
    
 	
@@ -24,6 +27,6 @@ class Time
 };
 int main()
 {
-	Time s;
-	s.time();
+	Time s1;
+	s1.time();
 }
