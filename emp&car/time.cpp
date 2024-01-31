@@ -10,10 +10,12 @@ class Time
 	{
 	  cout << "Enter second : ";
 	  cin >> second;
-	   hour = second / 3600;
-       min = second / 60; 
-       second = second % 60;
-
+	  
+	   hour = second/3600;
+	   second=second-(hour*3600);
+	   min=second/60;
+	   second=second-(min*60);
+	   
 	 cout <<"hh: mm: ss " << endl << hour << ':' << min << ':' << second ; 
 	}
    
