@@ -13,7 +13,7 @@ using namespace std;
 class Student_Record
 {
 	int id,age,simcard_validity;
-	double mobile_no;
+	long mobile_no;
 	string city;
 	string name;
 	string telecom_brand_name;
