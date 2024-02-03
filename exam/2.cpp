@@ -1,4 +1,4 @@
-//Q.3 Write a program to convert second into hh: mm: ss.
+//Q.2 Write a program to convert second into hh: mm: ss.
 #include<iostream>
 using namespace std;
 
