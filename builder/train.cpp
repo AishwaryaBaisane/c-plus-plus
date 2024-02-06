@@ -82,7 +82,7 @@ class Train
 				cin >> train_num;
 				    
 				   
-                 if(i==4)
+                 if(i==5)
                   {
                   	cout << "Thank you for visitting :";
 				  }
